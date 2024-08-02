@@ -99,7 +99,7 @@ const Form = () => {
                     type="password"
                     id="password"
                     name="password"
-                    style={{ padding: '8px', width: '100%' }}
+                    style={{ padding: '9px', width: '100%' }}
                     value={formik.values.password}
                     placeholder="Enter your password"
                     onChange={formik.handleChange}
