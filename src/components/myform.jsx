@@ -2,7 +2,6 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-// Updated schema with additional validations
 const formSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Too Short!')
