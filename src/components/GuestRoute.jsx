@@ -16,14 +16,11 @@
 
 // export default PrivateRoute;
 
-
-
-
-import React from 'react';
-import { Navigate } from 'react-router-dom';
+import React from "react";
+import { Navigate } from "react-router-dom";
 
 const GuestRoute = ({ children }) => {
-  const isAuthenticated = localStorage.getItem('isAuth') === 'true';
+  const isAuthenticated = localStorage.getItem("isAuth") === "true";
 
   if (isAuthenticated) {
     return <Navigate to="/home" />;

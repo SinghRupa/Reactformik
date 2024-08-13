@@ -26,3 +26,15 @@
     object-fit: cover;
 }
 
+.heading{
+display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 180, 180);
+}
+ 
+.btn1{
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}

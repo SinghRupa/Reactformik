@@ -1,7 +1,6 @@
-
-import React, { useEffect } from 'react';
-import { useNavigate, Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
+import React, { useEffect } from "react";
+import { useNavigate, Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const PrivateRoute = () => {
   const navigate = useNavigate();
@@ -9,20 +8,16 @@ const PrivateRoute = () => {
 
   useEffect(() => {
     if (!idno) {
-      navigate('/login');
+      navigate("/login");
     }
-  }, [idno, navigate]);  //dependency
-   
-        
-  return idno ?
+  }, [idno, navigate]); //dependency
+
+  return idno ? (
     <>
       <Navbar />
-      <Outlet />   
+      <Outlet />
     </>
-    : null;
+  ) : null;
 };
 
 export default PrivateRoute;
-
-
-
